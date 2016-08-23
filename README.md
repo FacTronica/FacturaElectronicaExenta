@@ -1,4 +1,4 @@
-# FacturaElectronicaExenta
+# Factura Electronica Exenta
 Factura Electrónica Exenta Tipo 34
 
 Para generar una Factura Electrónica Exenta, el proceso y esquema del txt y xml es similar.
