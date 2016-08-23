@@ -11,6 +11,6 @@ EL INDICADOR DE LINEAS EN VALORES BRUTOS 1=SI 0=NO
 $IdDoc["MntBruto"]="0";
 
 EN CADA ITEM DEL DETALLE SE DEBE MARCAR COMO EXENTO
-$detalle["1"]["IndExe"]="1";
+<BR>$detalle["1"]["IndExe"]="1";
 
 
