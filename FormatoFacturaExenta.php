@@ -1,4 +1,5 @@
 <?php
+
 ##############################################################                                                 
 #######   PARAMETROS DE CONFIGURACIÓN                                                                          
 ##############################################################                                                 
@@ -22,7 +23,7 @@ $sw_enviar_receptor="1";
 $separador_carpetas="LINUX";                                                                                   
 #                                                                                                              
 # URL DEL LOGO A INSERTAR EN EL PDF POR EJ. HTTP://www.domain.cl/logo.png  120X120 PIXELS                      
-$url_logo="";// utilizar url normal sin https ni url corta          https://goo.gl/t2ljAK";                                                              
+$url_logo="";                                                              
 #                                                                                                              
 # URL DEL LOGO CENTRAL A INSERTAR EN EL PDF POR EJ. HTTP://www.domain.cl/logo.png  240X240 PIXELS              
 $url_logo_central="";                                                                                          
@@ -60,13 +61,13 @@ $CONFACTRONICA["FILETXT"]="envio_dte.txt";
 #######                                                                                                        
 ##############################################################                                                 
 # NOMBRE QUE SE LE QUIERE DAR EL ARCHIVO PDF                                                                   
-$CONFACTRONICA["FILEPDF"]="PDF_RUT89428000-K_TIPO33_FOLIO38.pdf";
+$CONFACTRONICA["FILEPDF"]="PDF_RUT77777777-7_TIPO34_FOLIO38.pdf";
 # NOMBRE QUE SE LE QUIERE DAR EL ARCHIVO PDF                                                                   
-$CONFACTRONICA["FILEPDFCLIENTE"]="PDFC_RUT89428000-K_TIPO33_FOLIO38.pdf";
+$CONFACTRONICA["FILEPDFCLIENTE"]="PDFC_RUT77777777-7_TIPO34_FOLIO38.pdf";
 # NOMBRE DEL ARCHIVO PNG CON LA IMAGEN DEL PDF417 (TED) TIMBRE ELECTRONICO SII CHILE                           
-$CONFACTRONICA["FILEPNG"]="PDF4189428000-K_TIPO33_FOLIO38.png";
+$CONFACTRONICA["FILEPNG"]="PDF4177777777-7_TIPO34_FOLIO38.png";
 # NOMBRE DEL ARCHIVO XML CON LA RESPUESTA DEL SII (TRACKID)                                                    
-$CONFACTRONICA["TRACKID"]="TRACKID_RUT89428000-K_TIPO33_FOLIO38.xml";
+$CONFACTRONICA["TRACKID"]="TRACKID_RUT77777777-7_TIPO34_FOLIO38.xml";
                                                                                                                
                                                                                                                
                                                                                                                
@@ -74,20 +75,20 @@ $CONFACTRONICA["TRACKID"]="TRACKID_RUT89428000-K_TIPO33_FOLIO38.xml";
 ####### NOMBRE DE ARCHIVOS XML POR FIRMAR                                                                      
 ##############################################################                                                 
 # NOMBRE DEL ARCHIVO DEL DTE POR FIRMAR                                                                        
-$CONFACTRONICA["DTEPORFIRMAR"]="DTEPORFIRMAR_RUT89428000-K_TIPO33_FOLIO38.xml";
+$CONFACTRONICA["DTEPORFIRMAR"]="DTEPORFIRMAR_RUT77777777-7_TIPO34_FOLIO38.xml";
 # NOMBRE DEL ARCHIVO DEL SET POR FIRMAR                                                                        
-$CONFACTRONICA["SETDTEPORFIRMAR"]="SETPORFIRMAR_RUT89428000-K_TIPO33_FOLIO38.xml";
+$CONFACTRONICA["SETDTEPORFIRMAR"]="SETPORFIRMAR_RUT77777777-7_TIPO34_FOLIO38.xml";
                                                                                                                
                                                                                                                
 ##############################################################                                                 
 ####### NOMBRE DE ARCHIVOS XML FIRMADOS                                                                        
 ##############################################################                                                 
 # NOMBRE DEL ARCHIVO DEL DTE FIRMADO                                                                           
-$CONFACTRONICA["DTEFIRMADO"]="DTEFIRMADO_RUT89428000-K_TIPO33_FOLIO38.xml";
+$CONFACTRONICA["DTEFIRMADO"]="DTEFIRMADO_RUT77777777-7_TIPO34_FOLIO38.xml";
 # NOMBRE DEL ARCHIVO DEL SET FIRMADO Y QUE SE ENVIARÁ AL CLIENTE AL MAIL INTERCAMBIO                           
-$CONFACTRONICA["SETDTEFIRMADO_CLIENTE"]="SETFIRMADOCLIENTE_RUT89428000-K_TIPO33_FOLIO38.xml";
+$CONFACTRONICA["SETDTEFIRMADO_CLIENTE"]="SETFIRMADOCLIENTE_RUT77777777-7_TIPO34_FOLIO38.xml";
 # NOMBBRE DEL ARCHIVO DEL SET FIRMADO Y QUE SE ENVIARA AL SII POR MEDIO DE WEBSERVICES                         
-$CONFACTRONICA["SETDTEFIRMADO_SII"]="SETFIRMADOSII_RUT89428000-K_TIPO33_FOLIO38.xml";
+$CONFACTRONICA["SETDTEFIRMADO_SII"]="SETFIRMADOSII_RUT77777777-7_TIPO34_FOLIO38.xml";
                                                                                                                
                                                                                                                
                                                                                                                
@@ -96,7 +97,7 @@ $CONFACTRONICA["SETDTEFIRMADO_SII"]="SETFIRMADOSII_RUT89428000-K_TIPO33_FOLIO38.
 ##############################################################                                                 
 #                                                                                                              
 # RUT DEL CONTRIBUYENTE EMISOR                                                                                 
-$caratula["RutEmisor"]="76057813-4";
+$caratula["RutEmisor"]="88888888-8";
 #                                                                                                              
 # RUT AUTORIZADO A ENVIAR DTES AL SII SIEMPRE ES RUT DE PERSONA NO DE EMPRESA                                  
 $caratula["RutEnvia"]="11848319-7";
@@ -111,7 +112,7 @@ $caratula["FchResol"]="2014-08-22";
 $caratula["NroResol"]="80";
 #                                                                                                              
 # NOMBRE SUCURSAL SII                                                                                          
-$caratula["SucSii"]="PUNTA ARENAS";
+$caratula["SucSii"]="LA FLORIDA";
 #                                                                                                              
 ##############################################################                                                 
 #######   ENCABEZADO                                                                                           
@@ -126,8 +127,8 @@ $IdDoc["FchVenc"]="2016-08-05";
 # TEXTO CON FORMA DE PAGO                                                                                      
 $IdDoc["TermPagoGlosa"]="CONTADO";
 #                                                                                                              
-# TIPO DE DOCUMENTO FV=33, ND=56, NC=61                                                                        
-$IdDoc["TipoDTE"]="33";
+# TIPO DE DOCUMENTO FV=34 FACTURA ELECTRONICA EXENTA                                                                       
+$IdDoc["TipoDTE"]="34";
 #                                                                                                              
 # FOLIO DEL DOCUMENTO                                                                                          
 $IdDoc["Folio"]="38";
@@ -139,20 +140,20 @@ $IdDoc["TipoDespacho"]="";
 $IdDoc["IndTraslado"]="";
 #                                                                                                              
 # INDICADOR DE LINEAS EN VALORES BRUTOS 1=SI 0=NO                                                              
-$IdDoc["MntBruto"]="1";
+$IdDoc["MntBruto"]="0";
                                                                                                                
 ##############################################################                                                 
 #######   EMISOR                                                                                               
 ##############################################################                                                 
 #                                                                                                              
 # RUT EMISOR                                                                                                   
-$Emisor["RUTEmisor"]="76057813-4";
+$Emisor["RUTEmisor"]="88888888-8";
 #                                                                                                              
 # RAZON SOCIAL EMISOR                                                                                          
-$Emisor["RznSoc"]="TEST CHILE ";
+$Emisor["RznSoc"]="MINIMARKET DE PRUEBA S.A."; 
 #                                                                                                              
 # GIRO EMISOR                                                                                                  
-$Emisor["GiroEmis"]="PUBLICIDAD";
+$Emisor["GiroEmis"]="ABARROTES Y OTROS";
 #                                                                                                              
 # CODIGO PRINCIPAL DE ACTIVIDAD COMERCIAL                                                                      
 $Emisor["Acteco"]="202900";
@@ -161,47 +162,47 @@ $Emisor["Acteco"]="202900";
 $Emisor["CdgSIISucur"]="12205";
 #                                                                                                              
 # DIRECCION EMISOR                                                                                             
-$Emisor["DirOrigen"]="SEÑORET NRO 102";
+$Emisor["DirOrigen"]="ALAMEDA 345";
 #                                                                                                              
 # COMUNA EMISOR                                                                                                
-$Emisor["CmnaOrigen"]="PUNTA ARENAS";
+$Emisor["CmnaOrigen"]="PROVIDENCIA";
 #                                                                                                              
 # CIUDAD EMISOR                                                                                                
-$Emisor["CiudadOrigen"]="PUNTA ARENAS";
+$Emisor["CiudadOrigen"]="SANTIAGO";
 #                                                                                                              
 # EMAIL EMISOR                                                                                                 
-$Emisor["CorreoEmisor"]="ventas1@tsletreros.cl";
+$Emisor["CorreoEmisor"]="VENTAS@FACTRONICA.CL";
 #                                                                                                              
 # WEB EMISOR                                                                                                   
-$Emisor["Web"]="www.tsletreros.cl";
+$Emisor["Web"]="www.factronica.cl";
 #                                                                                                              
 # FONO EMISOR                                                                                                  
-$Emisor["Telefono"]="+56 61 2218092";
+$Emisor["Telefono"]="56988040574";
 #                                                                                                              
 ##############################################################                                                 
 #######   RECEPTOR                                                                                             
 ##############################################################                                                 
 #                                                                                                              
 # RUT RECEPTOR                                                                                                 
-$Receptor["RUTRecep"]="89428000-K";
+$Receptor["RUTRecep"]="77777777-7";
 #                                                                                                              
 # RAZON SOCIAL RECEPTOR                                                                                        
-$Receptor["RznSocRecep"]="AEROVIAS DAP S. A.";
+$Receptor["RznSocRecep"]="JUAN PEREZ CLIENTE LTDA";
 #                                                                                                              
 # GIRO RECEPTOR                                                                                                
-$Receptor["GiroRecep"]="TRANSPORTE AEREO DE CARGA Y PA";
+$Receptor["GiroRecep"]="TRANSPORTE";
 #                                                                                                              
 # DIRECCION RECEPTOR                                                                                           
-$Receptor["DirRecep"]="O HIGGINS 891";
+$Receptor["DirRecep"]="LAS CAMELIAS 444";
 #                                                                                                              
 # COMUNA RECEPTOR                                                                                              
-$Receptor["CmnaRecep"]="PUNTA ARENAS";
+$Receptor["CmnaRecep"]="LAS CONDES";
 #                                                                                                              
 # CIUDAD RECEPTOR                                                                                              
-$Receptor["CiudadRecep"]="PUNTA ARENAS";
+$Receptor["CiudadRecep"]="SANTIAGO";
 #                                                                                                              
 # CONTACTO RECEPTOR                                                                                            
-$Receptor["Contacto"]="juan perez";//"";
+$Receptor["Contacto"]="JUAN PEREZ";
 #                                                                                                              
 # CORREO RECEPTOR                                                                                              
 $Receptor["CorreoRecep"]="contacto@factronica.cl";
@@ -230,16 +231,16 @@ $Receptor["CorreoRecep"]="contacto@factronica.cl";
 $Totales["TasaIVA"]="19";
 #                                                                                                              
 # NETO AFECTO                                                                                                  
-$Totales["MntNeto"]="12033";
+$Totales["MntNeto"]="10000";
 #                                                                                                              
 # NETO EXENTO                                                                                                  
 $Totales["MntExe"]="0";
 #                                                                                                              
 # MONTO IVA                                                                                                    
-$Totales["IVA"]="2286";
+$Totales["IVA"]="0";
 #                                                                                                              
 # MONTO TOTAL BRUTO                                                                                            
-$Totales["MntTotal"]="14319";
+$Totales["MntTotal"]="10000";
 #                                                                                                              
 ##############################################################                                                 
 #######   DESCUENTOS GLOBALES                                                                                  
@@ -262,17 +263,17 @@ $Totales["MntTotal"]="14319";
 #                                                                                                              
 $detalle["1"]["NroLinDet"]="1";
 $detalle["1"]["NmbItem"]="";
-$detalle["1"]["DscItem"]="BOTELLA DE AGUA 900CC. AZUL";
+$detalle["1"]["DscItem"]="SERVICIO DE ASESORIA";
 $detalle["1"]["TpoCodigo"]="INT1";
 $detalle["1"]["UnmdItem"]="UNI";
-$detalle["1"]["QtyItem"]="43";
+$detalle["1"]["QtyItem"]="10";
 $detalle["1"]["VlrCodigo"]="BA900-A";
-$detalle["1"]["PrcItem"]="333";
+$detalle["1"]["PrcItem"]="1000";
 $detalle["1"]["CodImpAdic"]="";
-$detalle["1"]["MontoItem"]="333";
+$detalle["1"]["MontoItem"]="10000";
 $detalle["1"]["DescuentoPct"]="0";
 $detalle["1"]["DscItemPesos"]="0";
-$detalle["1"]["IndExe"]="0";
+$detalle["1"]["IndExe"]="1";
 
                                                                                                                
                                                                                                                
@@ -308,30 +309,6 @@ $certificado["X509Certificate"]="MIIGSzCCBTOgAwIBAgIKHynmewAAAASOcTANBgkqhkiG9w0
 A1UEBhMCQ0wxHTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQH
 EwhTYW50aWFnbzEUMBIGA1UEChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9y
 aWRhZCBDZXJ0aWZpY2Fkb3JhMTAwLgYDVQQDEydFLUNFUlRDSElMRSBDQSBGSVJN
-QSBFTEVDVFJPTklDQSBTSU1QTEUxJzAlBgkqhkiG9w0BCQEWGHNjbGllbnRlc0Bl
-LWNlcnRjaGlsZS5jbDAeFw0xNjA3MjUxMzQxNDNaFw0xOTA3MjUxMzQxNDNaMIHO
-MQswCQYDVQQGEwJDTDEvMC0GA1UECAwmTUFHQUxMQU5FUyBZIERFIExBIEFOVMOB
-UlRJQ0EgQ0hJTEVOQSAxEzARBgNVBAcTCk1hZ2FsbGFuZXMxFDASBgNVBAoTC3Rz
-IGxpbWl0YWRhMRUwEwYDVQQLEwxjb250YWJpbGlkYWQxKDAmBgNVBAMTH3Zlcm9u
-aWNhIHBhbWVsYSAgdG9ycmVzIGFsY2FsbGExIjAgBgkqhkiG9w0BCQEWE3NtYXJ0
-aW5lekBjb2FzZXMuY2wwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANuTPeOp
-fEeMf/CPwr2OWVlKMJ4AJotoPwAlDjy/cjrzLkScph6FUWNnJfmyM4q4yEtPcTqL
-r1y+Zb+UM0Is/5ZHheH8loIrFvlhMf+u6Bm7plHKg9R9TRVWJYNA3dxsNb2E7EVm
-vVzAYAM2h5LRhIGhXoLFZvx83tLI5+dikZ15AgMBAAGjggKnMIICozA9BgkrBgEE
-AYI3FQcEMDAuBiYrBgEEAYI3FQiC3IMvhZOMZoXVnReC4twnge/sPGGBmucVhq/g
-FQIBZAIBBDAdBgNVHQ4EFgQUZLN8HpokN8QJj7EZnGPz3/rC2scwCwYDVR0PBAQD
-AgTwMB8GA1UdIwQYMBaAFHjhPp/SErN6PI3NMA5Ts0MpB7NVMD4GA1UdHwQ3MDUw
-M6AxoC+GLWh0dHA6Ly9jcmwuZS1jZXJ0Y2hpbGUuY2wvZWNlcnRjaGlsZWNhRkVT
-LmNybDA6BggrBgEFBQcBAQQuMCwwKgYIKwYBBQUHMAGGHmh0dHA6Ly9vY3NwLmVj
-ZXJ0Y2hpbGUuY2wvb2NzcDAjBgNVHREEHDAaoBgGCCsGAQQBwQEBoAwWCjExODQ4
-MzE5LTcwIwYDVR0SBBwwGqAYBggrBgEEAcEBAqAMFgo5NjkyODE4MC01MIIBTQYD
-VR0gBIIBRDCCAUAwggE8BggrBgEEAcNSBTCCAS4wLQYIKwYBBQUHAgEWIWh0dHA6
-Ly93d3cuZS1jZXJ0Y2hpbGUuY2wvQ1BTLmh0bTCB/AYIKwYBBQUHAgIwge8egewA
-QwBlAHIAdABpAGYAaQBjAGEAZABvACAARgBpAHIAbQBhACAAUwBpAG0AcABsAGUA
-LgAgAEgAYQAgAHMAaQBkAG8AIAB2AGEAbABpAGQAYQBkAG8AIABlAG4AIABmAG8A
-cgBtAGEAIABwAHIAZQBzAGUAbgBjAGkAYQBsACwAIABxAHUAZQBkAGEAbgBkAG8A
-IABoAGEAYgBpAGwAaQB0AGEAZABvACAAZQBsACAAQwBlAHIAdABpAGYAaQBjAGEA
-ZABvACAAcABhAHIAYQAgAHUAcwBvACAAdAByAGkAYgB1AHQAYQByAGkAbzANBgkq
 hkiG9w0BAQUFAAOCAQEAVnfgK1xR4AvyZeamjjZjFPStvhl88E8zz6jaxXLlFNDd
 7kAGpXPqfvCu5KNxHjQbJWiuSarh7XlW5HbTkQBenl0KQNvBjsQrvzBDj5HD8eo/
 +11yx6q1iu+rwEFgbn3b+ipoajFNMgib3kP1ZKn2uZac44pjiYjHT+sDt2vtrYUw
@@ -344,13 +321,6 @@ dHOWnoUV+lNNKKsfI0OTqQDvFQ5dasp+GhypO3LNGWfC5S9PZi246Q4/6HyXdF+U
 $certificado["PrivKey"]="-----BEGIN RSA PRIVATE KEY-----
 MIICXQIBAAKBgQDbkz3jqXxHjH/wj8K9jllZSjCeACaLaD8AJQ48v3I68y5EnKYe
 hVFjZyX5sjOKuMhLT3E6i69cvmW/lDNCLP+WR4Xh/JaCKxb5YTH/rugZu6ZRyoPU
-fU0VViWDQN3cbDW9hOxFZr1cwGADNoeS0YSBoV6CxWb8fN7SyOfnYpGdeQIDAQAB
-AoGBALYUsbu6bi6+2dFYxXp/MqSSmyJKqavs9GFgWSAS+dzcj7+hzzd8AnPVs24O
-UiN0+9NHu3N7Jh5YXPOzJ5Z2zjH8aoJB2UWyXf4iM3Uio8e2MFG5/RiaYid0PY0I
-+a70vpMIc2sxjUs8dqTOdBUBhNHKJnhAPLkDvNRR36R1X/EBAkEA/SVP5NvDhRkq
-Yhb9W8Xvq1S6qVW9XHHCeBa55Wj6vLEQNdk8Flt3zt+mWY3saeizJSpqXsKGCHm0
-6qehsIugEQJBAN4NB8xmgz2UI5QQkG6yARdppJJ0ptcrrVr6HrqbQQ22emIHC4OT
-DzUnr2pOfV5DgXaFdq8ki9t2de723ID8DukCQQCNW2yFq4I+rJLSO2w29wyia6ng
 LRSUrqGdVXNw+3IoM+eNakT3ZxQ73P+TOoEtkteWhVzolU8rJGs2LW1InG9BAkBT
 hZ04Uhrtb6pOSEi7inMEpnUDraMP7lrfjJNAZ6N5j/jKpJG9JPSkbs/5cZqQeV3a
 AeuZh2qf2xgTEYHxdl35AkBRoBTl+zYP89XA+15foXQzLfLuTCeA3bWlMdgpVpeM
@@ -364,15 +334,15 @@ Dj8kJefDsk1wryMlF7SPBXxAEIrTYUR91wgj21b5DYSK
 #######   CARGAR DATOS DE TIMBRAJE DE FOLIOS                                                                   
 ##############################################################                                                 
 # RUT EMISOR                                                                                                   
-$CAF["RE"]="76057813-4";
+$CAF["RE"]="88888888-8";
 #                                                                                                              
 #                                                                                                              
 # RAZON SOCIAL EMISOR                                                                                          
-$CAF["RS"]="T Y S LIMITADA";
+$CAF["RS"]="EMPRESA DE PRUEBA LTDA.";
 #                                                                                                              
 #                                                                                                              
 # TIPO DE DOCUMENTO                                                                                            
-$CAF["TD"]="33";
+$CAF["TD"]="34";
 #                                                                                                              
 #                                                                                                              
 # FOLIO DESDE                                                                                                  
@@ -404,11 +374,37 @@ $CAF["FRMA"]="m3Fbb+Qkb25+kbAwtU7Z9usUEv+yE4SV58PsLCWEHt1WJQNJGoIuGo86NhhyLCLqFR
 #                                                                                                              
 #                                                                                                              
 # LLAVE PRIVADA DEL TIMBRAJE                                                                                   
-$CAF["RSASK"]="-----BEGIN RSA PRIVATE KEY----- MIIBOQIBAAJBAKC4NX13lpWvPlAmIkRdk4yWlDLbIxPAdYgIX7fPWfp7dvF/2Yqy oy3pR7S84jsTxKr4SWXAt5i05VGZoVDZ+BUCAQMCQGsleP5PubkffuAZbC2Tt7MP DXc8wg0q+QVa6nqKO/xRQM1X61tOVmUMAgvdjxd39wBLQjCs0VACVcb9Ay11EvMC 
-IQDOV+DHoqAGMIjct0V/NQhmmovllXLPBRBk3/nfbMOkGwIhAMdlmzDfHRtlzmfr qwxi12uP+4CHSq6boP/HJD0f5rePAiEAiY/rL8HABCBbPc+DqiNa7xGymQ5MigNg Qz/76kiCbWcCIQCE7md16hNnmTRFR8ddlzpHtVJVr4cfEmtVL21+FUR6XwIgJppW G8JRwJz6QFYnzfW/v/+JB/TKD6FHytwp4ODCvac= -----END RSA 
-PRIVATE KEY----- ";
+$CAF["RSASK"]="-----BEGIN RSA PRIVATE KEY----- MIIBOQIBAAJBAKC4NX13lpWvPlAmIkRdk4yWlDLbIxPAdYgIX7fPWfp7dvF/2Yqy oy3pR7S8
+4jsTxKr4SWXAt5i05VGZoVDZ+BUCAQMCQGsleP5PubkffuAZbC2Tt7MP DXc8wg0q+QVa6nqKO/xRQM1X61tOVmUMAgvdjxd39wBLQjCs0VACVcb9Ay11EvMC 
+IQDOV+DHoqAGMIjct0V/NQhmmovllXLPBRBk3/nfbMOkGwIhAMdlmzDfHRtlzmfr qwxi12uP+4CHSq6boP/HJD0f5rePAiEAiY/rL8HABCBbPc+DqiNa7xGy
+mQ5MigNg Qz/76kiCbWcCIQCE7md16hNnmTRFR8ddlzpHtVJVr4cfEmtVL21+FUR6XwIgJppW G8JRwJz6QFYnzfW/v/+
+JB/TKD6FHytwp4ODCvac= -----END RSA PRIVATE KEY----- ";
 #                                                                                                              
 #                                                                                                              
 # LLAVE PUBLICA DEL TIMBRAJE                                                                                   
-$CAF["RSAPUBK"]="-----BEGIN PUBLIC KEY----- MFowDQYJKoZIhvcNAQEBBQADSQAwRgJBAKC4NX13lpWvPlAmIkRdk4yWlDLbIxPA dYgIX7fPWfp7dvF/2Yqyoy3pR7S84jsTxKr4SWXAt5i05VGZoVDZ+BUCAQM= -----END PUBLIC KEY----- ";
+$CAF["RSAPUBK"]="-----BEGIN PUBLIC KEY----- MFowDQYJKoZIhvcNAQEBBQADSQAwRgJBAKC4NX13lp
+WvPlAmIkRdk4yWlDLbIxPA dYgIX7fPWfp7dvF/2Yqyoy3pR7S84jsTxKr4SWXAt5i05VGZoV
+DZ+BUCAQM= -----END PUBLIC KEY----- ";
+
+
+
+##############################################################
+####### DATOS DEL SERVIDOR (SOLO PARA USUARIOS DE WS CLIENTE FACTRONICA EN PHP )
+##############################################################
+# URL DEL WEBSERVICE SERVIDOR EJ. http://www.factronica.cl/factronica_webservice_servidor_beta
+$CONFACTRONICA["URLHOST"]="http://www.factronica.cl/factronica_webservice_servidor_beta";
+# SCRIPT DEL SERVIDOR EJ. index.php
+$CONFACTRONICA["URLFILE"]="index.php";
+# PUERTO DE COMUNICACION ej.80
+$CONFACTRONICA["PORT"]="80";
+# DEPURAR ej. 1
+$CONFACTRONICA["VERBOSE"]=1;
+# RETORNAR RESULTADOS ej. 1
+$CONFACTRONICA["RETURNTRANSFER"]=1;
+# TIEMPO MAXIMO ESPERA ej.30
+$CONFACTRONICA["TIMEOUT"]=30;
+# ENCABEZADO DEL ENVIO ej. 0
+$CONFACTRONICA["HEADER"]=0; 
+# ENVIAR ENCABEZADO EJ. true
+$CONFACTRONICA["HEADER_OUT"]=true;
 ?>                                                                                                             
